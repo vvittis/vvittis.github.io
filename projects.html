@@ -32,7 +32,8 @@
             <h4> Projects </h4>
             <br>
             <h6><strong>Thesis: Online Ensemble Classification Algorithms of Big Data Streams at Apache Flink</strong></h6>
-            <a class="notes" target="_blank" href="https://doi.org/10.26233/heallink.tuc.90722">PDF</a>    / <a class="notes" target="_blank" href="https://doi.org/10.26233/heallink.tuc.90722">Code</a>
+            <a class="notes" target="_blank" href="https://doi.org/10.26233/heallink.tuc.90722">PDF</a> / <a class="notes" target="_blank"
+                                                                                                             href="https://github.com/vvittis/DistributedLearningJava">Code</a>
             <p style="text-align: justify">
                 <!-- &emsp; -->
                 In a streaming context, machine learning is a more of a challenge, because incoming data cannot be stored and may change over time.
@@ -58,7 +59,6 @@
         <div class="col-md-2 col-sm-12">
         </div>
         <div class="col-md-4 col-sm-12">
-            <br>
             <h6><strong>Evaluation of Machine Learning Algorithms for Neuropsychiatric Systemic Lupus Erythematosus classification using resting-state
                 fMRI
                 connectivity data</strong></h6>
@@ -79,7 +79,8 @@
                 the classification process. The Connectivity Matrix used consisted of pairwise regional functional
                 associations of the fMRI signals within each of three predetermined brain networks in 31 NPSLE patients
                 and 31 healthy control subjects. Optimal, cross-validated classification accuracy was obtained using
-                Random Forest (77%) followed by SVM and NB methods (74%). Results demonstrate the potential for the future implementation of similar methods in the diagnosis of NPSLE.
+                Random Forest (77%) followed by SVM and NB methods (74%). Results demonstrate the potential for the future implementation of similar
+                methods in the diagnosis of NPSLE.
 
                 <br><br>
                 <a class="notes" target="_blank" href="https://github.com/vvittis/MachineLearning">Machine Learning Projects</a>
@@ -94,35 +95,28 @@
         <div class="col-md-2 col-sm-12">
         </div>
         <div class="col-md-4 col-sm-12">
-            <br>
-            <h6><strong>Evaluation of Machine Learning Algorithms for Neuropsychiatric Systemic Lupus Erythematosus classification using resting-state
-                fMRI
-                connectivity data</strong></h6>
-            <br>
+            <h6><strong>Random Sampling for Group-By Queries in Apache Flink</strong></h6>
+            <a class="notes" target="_blank" href="https://github.com/vvittis/FlinkSampling">Code</a>
+
             <p style="text-align: justify">
 
-                In this study we explored the robustness of different machine learning algorithms for the classification of
-                NPSLE patients and healthy control subjects using resting-state fMRI connectivity indices.
-                Neuropsychiatric systemic lupus erythematosus, which is a systemic autoimmune inflammatory disorder,
-                involves a wide range of focal and diffuse central and peripheral nervous system symptoms.
-                <br><br>
-                <!-- &emsp; -->
-                Machine Learning applications on clinical data may enhance the existing workflow for NPSLE classification as there
-                is no established method of applying neuroimaging data to the diagnosis of NPSLE. We evaluated different
-                ML algorithms: Support Vector Machines (SVM), K-Nearest-Neighbor (KNN), Naïve Bayesian and
-                Random Forest in order to achieve this goal. Feature selection or reduction methods were applied prior to
-                the classification process. The Connectivity Matrix used consisted of pairwise regional functional
-                associations of the fMRI signals within each of three predetermined brain networks in 31 NPSLE patients
-                and 31 healthy control subjects. Optimal, cross-validated classification accuracy was obtained using
-                Random Forest (77%) followed by SVM and NB methods (74%).
-                <br><br>
-                <!-- &emsp; -->
-                Results demonstrate the potential for the
-                future implementation of similar methods in the diagnosis of NPSLE.
+                This is a project implementing <a class="notes" target="_blank" href="https://arxiv.org/pdf/1909.02629.pdf">Random Sampling for
+                Group-By Queries</a> at Apache Flink Platform. The goal of this project is to sample
+                streaming tuples, answering effectively Single Aggregate along with a single group-by clause. This implementation is a two-pass
+                algorithm which is divided into two phases. The first phase has been taken from the first job (pre-processing) and the second phase
+                from the second job (reservoir sampling). The program prints per stratum:
+            <ul>
+                <li>Its average</li>
+                <li>The standard deviation</li>
+                <li>The sample size</li>
+                <li>The tuples of the sample</li>
+
+            </ul>
+
             </p>
         </div>
         <div class="col-md-6 col-sm-12">
-            <img src="photos/fmri.PNG" alt="">
+            <img src="photos/flink_sampling.PNG" alt="">
         </div>
     </div>
     <hr style="width:50%">
