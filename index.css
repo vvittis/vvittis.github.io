@@ -32,7 +32,8 @@
     text-align: center;
     margin-top: 10px;
 }
-.description{
+
+.description {
     text-align: center;
 }
 
@@ -40,21 +41,22 @@
 .icon-bar {
     position: fixed;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
 }
 
 .icon-bar a {
     display: block;
     text-align: center;
     padding: 16px;
-
     font-size: 20px;
 }
-.icon-bar a i{
+
+.icon-bar a i {
     color: white;
 }
+
 .icon-bar a:hover {
     background-color: #000;
 }
@@ -69,7 +71,8 @@
     background: #007bb5;
     color: white;
 }
-.github{
+
+.github {
     background: #50BFCF;
     color: white;
 }
@@ -80,7 +83,7 @@
     font-size: 30px;
 }
 
-#notes{
+.notes {
     font-size: 12px;
     font-style: italic;
 }
