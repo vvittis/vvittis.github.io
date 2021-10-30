@@ -1,0 +1,25 @@
+* {
+    font-family: "Raleway", "Quicksand", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+.row{
+    padding-top: 40px;
+}
+.container {
+    position: relative;
+    width: 70%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.col-7{
+
+    align-self: center;
+}
+.row img {
+    width:70%;
+    height:100%;
+    object-fit:scale-down;;
+}
