@@ -87,3 +87,9 @@
     font-size: 12px;
     font-style: italic;
 }
+#box{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #E8E8E8;
+}
