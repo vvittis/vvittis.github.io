@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-208779422-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-208779422-1');
@@ -37,24 +41,26 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2 col-sm-12">
+            <img style="width: 100%" src="photos/RandomForest.png" alt="">
+
         </div>
         <div class="col-md-4 col-sm-12">
-            <h4> Projects </h4>
+            <h2> Projects </h2>
             <br>
-            <h6><strong>Thesis: Online Ensemble Classification Algorithms of Big Data Streams at Apache Flink</strong></h6>
+            <h5><strong>Thesis: Online Ensemble Classification Algorithms of Big Data Streams at Apache Flink</strong></h5>
             <a class="notes" target="_blank" href="https://doi.org/10.26233/heallink.tuc.90722">PDF</a> / <a class="notes" target="_blank"
                                                                                                              href="https://github.com/vvittis/DistributedLearningJava">Code</a>
             <p style="text-align: justify">
                 <!-- &emsp; -->
                 In a streaming context, machine learning is a more of a challenge, because incoming data cannot be stored and may change over time.
                 Therefore, we have to create such algorithms that pass of the data once and extract the most information out of it.
-                <br><br>
+                <br>
                 <!-- &emsp; -->
                 In my thesis there is a streaming Random Forest or else an ensemble of Hoeffding Trees (HT), using the distributed engine of Apache
                 Flink. It handles numerical attributes by efficiently modeling them with Gaussian Approximation, and it uses the SVFDT-II algorithm to
                 cope with potential cluster restrictions by setting stricter splitting rules. Also, my thesis considers concept (-distribution) drift,
                 where I used the DDM algorithm.
-                <br><br>
+                <br>
                 My main contribution is a new experimental proposition of disengaging HT growth from the amount of incoming data, and a new way of
                 consistent, highly reliable query answering system, that guarantees the minimum possible error-rate in periods of abrupt concept
                 drift.
@@ -67,11 +73,39 @@
     <hr style="width:50%">
     <div class="row">
         <div class="col-md-2 col-sm-12">
+            <img style="width: 100%" src="photos/Spark.png" alt="">
         </div>
         <div class="col-md-4 col-sm-12">
-            <h6><strong>Evaluation of Machine Learning Algorithms for Neuropsychiatric Systemic Lupus Erythematosus classification using resting-state
+            <h5><strong>[CCFD-RF] Credit Card Fraudulent Detection with Random Forest</strong></h5>
+            <a class="notes" target="_blank" href="https://github.com/vvittis/CCFD-RF">Code</a>
+
+            <p style="text-align: justify">
+                This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform. The
+                increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. Based on extensive data collected for online card
+                payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1] This new form of transaction involves the risk of fraudulent
+                attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
+                <br>
+                <!-- &emsp; -->
+                This project suggests a new system for detecting and monitoring online transactions
+                using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. Our goal is to design a learner, for
+                extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets
+                and we manage to reach a 92% accuracy on average.
+            </p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <img src="photos/SparkCluster.PNG" alt="">
+        </div>
+    </div>
+    <hr style="width:50%">
+    <div class="row">
+        <div class="col-md-2 col-sm-12">
+            <img style="width: 100%" src="photos/ML.png" alt="">
+
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h5><strong>Evaluation of Machine Learning Algorithms for Neuropsychiatric Systemic Lupus Erythematosus classification using resting-state
                 fMRI
-                connectivity data</strong></h6>
+                connectivity data</strong></h5>
             <a class="notes" target="_blank" href="docs/Evaluation%20of%20ML%20Algorithms%20for%20NPSLE%20classification.pdf">PDF</a>
 
             <p style="text-align: justify">
@@ -80,7 +114,7 @@
                 NPSLE patients and healthy control subjects using resting-state fMRI connectivity indices.
                 Neuropsychiatric systemic lupus erythematosus, which is a systemic autoimmune inflammatory disorder,
                 involves a wide range of focal and diffuse central and peripheral nervous system symptoms.
-                <br><br>
+                <br>
                 <!-- &emsp; -->
                 Machine Learning applications on clinical data may enhance the existing workflow for NPSLE classification as there
                 is no established method of applying neuroimaging data to the diagnosis of NPSLE. We evaluated different
@@ -93,7 +127,7 @@
                 methods in the diagnosis of NPSLE.
 
                 <br><br>
-                <a class="notes" target="_blank" href="https://github.com/vvittis/MachineLearning">Machine Learning Projects</a>
+                <a class="notes" target="_blank" href="https://github.com/vvittis/MachineLearning">More Machine Learning Projects</a>
             </p>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -103,9 +137,10 @@
     <hr style="width:50%">
     <div class="row">
         <div class="col-md-2 col-sm-12">
+            <img style="width: 100%" src="photos/Sampling.png" alt="">
         </div>
         <div class="col-md-4 col-sm-12">
-            <h6><strong>Random Sampling for Group-By Queries in Apache Flink</strong></h6>
+            <h5><strong>Random Sampling for Group-By Queries in Apache Flink</strong></h5>
             <a class="notes" target="_blank" href="https://github.com/vvittis/FlinkSampling">Code</a>
 
             <p style="text-align: justify">
@@ -130,6 +165,56 @@
         </div>
     </div>
     <hr style="width:50%">
+    <div class="row">
+        <div class="col-md-2 col-sm-12">
+            <img style="width: 100%" src="photos/PHP.png" alt="">
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h5><strong>Student App using PHP in Docker Environment</strong></h5>
+            <a class="notes" target="_blank" href="https://github.com/vvittis/StudentApp">Code</a>
+
+            <p style="text-align: justify">
+                The purpose of this exercise is to establish communication among different services with Docker from different containers. The functionalities that the project offers are the above:
+            <ul>
+                <li> Users (Student, Teacher) Validation and Registration</li>
+                <li> Edit, Add, Delete, Search Student by authorized Teachers</li>
+            </ul>
+            </p>
+            <p style="text-align: justify">
+                The PHP-Apache service is responsible for containing all .php files of the project. The fact that this service depends on the connected database signifies that the database(mysqli)
+                service
+                will start as soon as the website(php-apache) service will start. In this service I do not use a ready to use container, but I constructed our own DockerFile inside the php folder. In
+                <br>
+                <!-- &emsp; -->
+                The MySQL is responsible for managing the database system of the project. This action serves that during the build of docker-compose up, the website will have an initialised database
+                alongside by grabbing the school.sql and
+                making it the starting point of the database.
+                <br>
+                <!-- &emsp; -->
+                The PhpMyAdmin service is optional but nonetheless necessary for visualization and better monitoring of the database. It's exposed port is 8080 for accessing externally and port 80 for
+                internal communication with the php as we discussed previously.
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h5><strong>A Decentralized "Ask Question App" in the Ethereum Blockchain</strong></h5>
+            <a class="notes" target="_blank" href="https://github.com/vvittis/DecentralizedAskQuestionApp">Code</a> / <a class="notes" target="_blank" href="https://billethchat.xyz/">Live Demo</a>
+
+            <p style="text-align: justify">
+                Truffle & React Decentralized Application on Ethereum TestNet (Rinkeby).
+                This project deploys a Smart Contracts setting the basis for the following cases:
+            <ul>
+                <li> Create Post</li>
+                <li> List all posts (Newest and Most liked)</li>
+                <li> Tip post through EAS (Ethereum Attestation System)</li>
+                <li>  Comment post</li>
+            </ul>
+            Blog Smart Contract handles the posting of "questions" and the comments of them.
+            </p>
+        </div>
+        <div class="col-md-2 col-sm-12">
+            <img style="width: 100%" src="photos/Eth.png" alt="">
+        </div>
+    </div>
 </div>
 
 
