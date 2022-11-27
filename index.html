@@ -44,12 +44,11 @@
                 <a href="https://github.com/vvittis" class="github"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/vasilis-vittis/" class="linkedin"><i
                         class="fa fa-linkedin"></i></a>
-
             </div>
 
 
         </div>
-        <div class="col-7 " style="margin-top: 40px;">
+        <div class="col-7" style="margin-top: 40px;">
             <!--                                                ABOUT ME                                                                           -->
             <h3> ABOUT ME</h3>
             <p style="text-align: justify">
@@ -71,7 +70,7 @@
                 year, I am mostly
                 working on Database Systems, Distributed Streaming Engines, Ensemble Learning, Graph Theory and Concept
                 Drift adaptation. For more information you
-                can take a look in my <a target="_blank" href="docs/CV_VITTIS_VASILEIOS.pdf">CV</a>.
+                can take a look in my <a target="_blank" href="docs/VasileiosVittisCV.pdf">CV</a>.
                 <br><br>
                 <!-- &emsp; -->
                 My current <strong> goals </strong> are: Distributed Machine Learning Algorithms and Efficient Data
@@ -167,7 +166,11 @@
             <hr style="width:50%">
             <br>
             <h4> Online Courses that I find useful</h4>
+
             <p class="notes">(...and surely they have helped me a lot)</p>
+            <!-- Trigger the Modal -->
+
+
             <ol>
                 <li><a class="notes" target="_blank"
                        href="https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/">
@@ -194,6 +197,22 @@
 
 
             </ol>
+                        <img id="myImg" src="photos/IMG_6B12DD7328AC-1.jpeg"
+                             alt="What I think a research data scientist should know!" style="width:100%;">
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
+
             <hr style="width:50%">
             <!--            <br>-->
             <!--            <div class="certificate">-->
@@ -332,8 +351,34 @@
         </div>
     </div>
 </div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
 
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    modal.addEventListener('click', ev => {
+        if (ev.target !== ev.currentTarget) return
+        modal.style.display = "none";
+    })
+
+</script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
