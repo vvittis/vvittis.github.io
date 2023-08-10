@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W7LR38K4E5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7LR38K4E5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-W7LR38K4E5');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-W7LR38K4E5');
+    </script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,157 +24,187 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <title>Vasileios Vittis</title>
+
+    <style>
+        /* Optional: Add custom styling if you want even more space on the sides */
+        @media (min-width: 992px) {
+            .container {
+                max-width: 80%; /* Adjust this value to your preference */
+            }
+        }
+    </style>
 </head>
 <body>
+<div class="navbar">
+    <a class="nav-item" href="projects.html"><strong style="color: #1c4587;">Projects</strong></a>
+    <a class="nav-item" href="https://www.linkedin.com/in/vasilis-vittis/" target="_blank">LinkedIn</a>
+    <a class="nav-item" href="https://github.com/vvittis" target="_blank">GitHub</a>
+</div>
+<header></header>
+<main>
+    <div class="container" id="topcontainer">
+        <!--    <ul class="nav justify-content-center">-->
+        <!--        <li class="nav-item">-->
+        <!--            <a class="nav-link active" href="index.html">About me</a>-->
+        <!--        </li>-->
+        <!--        <li class="nav-item">-->
+        <!--            <a class="nav-link" href="projects.html">Projects</a>-->
+        <!--        </li>-->
+        <!--    </ul>-->
+        <div class="row">
+            <div class="col-md-4" style="margin-top: 30px;">
+                <img src="photos/me_smiling.jpg" alt="Your Name" class="img-fluid  my-3 d-block mx-auto" style="max-width: 300px;">
 
-<div class="container" id="topcontainer">
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link active" href="index.html">About me</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-    </ul>
-    <div class="row">
-        <div class="col-4" style="margin-top: 30px;">
-            <img src="photos/me_smiling.jpg">
-            <div class="name"><strong>Vasileios Vittis</strong></div>
-            <div class="description">University of <br> Massachusetts, Amherst</div>
-            <div class="email"><strong>vvittis [at] umass [dot] edu</strong></div>
-            <div class="icon-bar">
-                <a href="https://github.com/vvittis" class="github"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/vasilis-vittis/" class="linkedin"><i
-                        class="fa fa-linkedin"></i></a>
-            </div>
+                <div class="name"><strong>Vasileios Vittis</strong></div>
+                <div class="description">University of <br> Massachusetts, Amherst</div>
+                <br>
+                <!--            <a href="#" class="fa fa-linkedin"></a>-->
+                <!--            <a href="#" class="fa fa-github"></a>-->
 
-
-        </div>
-        <div class="col-7" style="margin-top: 40px;">
-            <!--                                                ABOUT ME                                                                           -->
-            <h3> ABOUT ME</h3>
-            <p style="text-align: justify">
-                <!-- &emsp; -->
-                PhD student in <a target="_blank" href="https://dream.cs.umass.edu">DREAM Lab</a> of College of
-                Information and Computer Science, University of Massachusetts Amherst, working under the supervision of
-                <a target="_blank"
-                   href="https://people.cs.umass.edu/~ameli/">Alexandra Meliou</a> and <a target="_blank"
-                                                                                          href="https://people.cs.umass.edu/~phaas/">Peter
-                Haas</a>.
-
-                Graduated from the School of Electrical and Computer Engineering of <a target="_blank"
-                                                                                       href="https://www.ece.tuc.gr/index.php?id=4481">
-                Technical
-                University of Crete</a>. I received my diploma (5 year curriculum) (top-5.8%) under the supervision of
-                <a target="_blank" href="http://users.softnet.tuc.gr/~adeli/">Antonios Deligiannakis</a>.
-                <br><br>
-                I am excited about streaming distributed systems and theoretical machine learning algorithms. The last
-                two years, I am actively working on Database Systems, Distributed Streaming Engines, Ensemble Learning, Concept
-                Drift adaptation and Linear Optimization Techniques. For more information you
-                can take a look in my <a target="_blank" href="docs/VasileiosVittisCV.pdf">CV</a>.
-
-                Right
-<!--                <br><br>-->
-<!--                &lt;!&ndash; &emsp; &ndash;&gt;-->
-<!--                My current <strong> goals </strong> are: Distributed Machine Learning Algorithms and Efficient Data-->
-<!--                Management.-->
-<!--                I am working at research projects where innovative solutions can be proposed in algorithmic problems.-->
-
-                <br><br>
-            </p>
-            <div id="box">
-                I am first and foremost a problem solver, and search widely to find problems where mathematics (simple
-                or complicated) can answer
-                scientific questions.
-            </div>
-
-            <hr style="width:50%">
-            <br>
-
-            <!--                                                PUBLICATIONS                                                                       -->
-            <h4> Publications </h4>
-            <h6><strong>Thesis: Online Ensemble Classification Algorithms of Big Data Streams at Apache Flink</strong>
-                <a class="notes" target="_blank" href="docs/Vittis_Vasileios_Dip_2021.pdf">PDF</a>
-            </h6>
-
-            <!--            <hr style="width:50%">-->
-            <!--            <br>-->
-            <!--            &lt;!&ndash;                                                COURSES                                                                            &ndash;&gt;-->
-            <!--            <h4>Notable Graduate Coursework </h4>-->
-            <!--            <p class="notes">(<strong>Note:</strong> I attended these additional graduate courses as a part of my undergraduate fulfillment)</p>-->
-            <!--            <ul>-->
-            <!--                <li>Special Topics in Database Systems (10/10)</li>-->
-            <!--                <li>Approximation Techniques for Massive Databases and Data Streams (8.5/10)</li>-->
-            <!--            </ul>-->
-            <!--            <hr style="width:50%">-->
-            <!--            <br>-->
-            <!--            <h4>Notable Undergraduate Coursework</h4>-->
-            <!--            <ul>-->
-            <!--                <li>Databases (9.5/10)</li>-->
-            <!--                <li>Services in the Computational Cloud and the Fog (9.5/10)</li>-->
-            <!--                <li>Artificial Intelligence (9/10)</li>-->
-            <!--                <li>Dynamic Programming (10/10)</li>-->
-            <!--                <li>Operating Systems (9/10)</li>-->
-            <!--                <li>Digital Signal Processing (10/10)</li>-->
-            <!--                <li>Data and File Structures (9/10)</li>-->
-            <!--                <li>Algorithms and Complexity (7.5/10) (Top 7)</li>-->
-            <!--                <li>Statistical Modeling and Pattern Recognition (7.5/10) (Top 5%)</li>-->
-            <!--                <li>Security in Systems and Services (9/10)</li>-->
-            <!--                <li>Multi-Agent Systems (8.5/10)</li>-->
-            <!--                <li>Reconfigurable Computing Systems (10/10)</li>-->
-            <!--            </ul>-->
-            <!--            &lt;!&ndash;                                                Technical Skills                                                                   &ndash;&gt;-->
-            <!--            <hr style="width:50%">-->
-            <!--            <br>-->
-            <!--            <h4> Technical Skills</h4>-->
-            <!--            <ul>-->
-            <!--                <li> <strong>Programming Languages:</strong> Python, Java, Scala, C, C++, Matlab, SQL,Node.js, web3.js, Django, React</li>-->
-            <!--                <li> <strong>Environments, Tools & Libraries:</strong> Tensorflow, Keras, Pandas, Apache Spark, Apache Flink</li>-->
-            <!--            </ul>-->
-            <hr style="width:50%">
-            <br>
-            <h4> Award & News</h4>
-            <ul>
-                <li style="font-size: 16px; font-weight: bold;"> [Feb 2023] Poster Accepted at <a target="_blank" href="https://northeastern-datalab.github.io/nedbday/2023/">NEDB</a></li>
-                <li> [September 2022] UMass CICS scholarship $4,000</li>
-                <li> [April 2021] Attended <a target="_blank" href="https://icde2021.gr/">ICDE</a> (virtual)</li>
-                <li> [April 2019] Attended <a target="_blank" href="https://sfhmmy11.sfhmmy.gr/en/home">ECESCON11</a> in
-                    Thessaloniki, Greece
-                </li>
-                <li> [June 2018] Attended <a target="_blank" href="http://it.murdoch.edu.au/wowmom2018/">WoWMoM</a> in
-                    Chania, Greece
-                </li>
-                <li> [Feb 2019] <strong>1st Place Entrepreneurship Initiative Start-up Pitch Greece Section <a
-                        class="notes" target="_blank"
-                        href="https://www.facebook.com/ieee.hsypc/posts/2584810448265412">Link</a> </strong>
+                <!--                                                ABOUT ME                                                                           -->
+                <h3> ABOUT ME</h3>
+                <p style="font-size: 17px">
+                    <!-- &emsp; -->
+                    PhD student in the College of Information and Computer Science Department at University of Massachusetts Amherst.
                     <br>
-                    <p style="text-align: justify; margin-left: 25px">
-                        Rε-Scan was a startup effort that wanted to reduce the world’s environmental footprint enabling
-                        future generations to live in a cleaner and more sustainable planet with
-                        minimum wasted resources.
-                        Our goal was to make recycling as easy as possible and we could do that by creating a live
-                        community around the RεScan brand with millions of users as passionate
-                        about recycling as we are.
-                        <a target="_blank"
-                           href=" https://www.facebook.com/IEEER8Entrepreneurship/photos/2643657755916254"> Our
-                            Participation </a> / <a target="_blank"
-                                                    href=" https://drive.google.com/file/d/16UYMfIAsqhofD7TEhbmVYReeHVB6XvH3/view?fbclid=IwAR1_i8U3vbjsRV-XVV-cGl4_wx3wdjzUyhrqNuSWrdeJxBUk5AlH3cz6EvU">
-                        Presentation </a>
-                    </p>
-                </li>
-            </ul>
+                    <br>
+                    Working on the intersection of machine learning, applied statistics and database systems.
+                    <br>
+                    <br>
+                    For more information you can take a look in my <a target="_blank" href="docs/CV%20-%20Vasileios%20Vittis-2.pdf"><strong>CV</strong></a>.
+                    <br><br>
+                </p>
+                <div id="box">
+                    I am first and foremost a problem solver, and search widely to find problems where mathematics can answer
+                    scientific questions.
+                </div>
 
-            </ul>
+                <hr style="width:50%">
+                <br>
+
+            </div>
+            <div class="col-md-8" style="margin-top: 40px;">
+
+                <h4 style="color: #1c4587; font-weight: bold;"> My Timeline
+                    <hr style="width:20%">
+                </h4>
+                <section id="cd-timeline" class="cd-container">
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+
+                        <div class="cd-timeline-content">
+                            <h6>Accepted Poster at NEDB</h6>
+                            <div class="timeline-content-info">
+                                NorthEastern Database Conference, Boston, USA
+                            </div>
+                            <p>I presented my poster for the latest work on Incremental Package Maintenance
+                            </p>
+                            <ul class="content-skills">
+                                <li><a style="color: white" target="_blank" href="https://vvittis.github.io/ScalablePackageBuilderProject/">Poster</a></li>
+                            </ul>
+                            <span class="cd-date">2023</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+
+                        <div class="cd-timeline-content">
+                            <h2>Joined the DREAM Lab </h2>
+                            <div class="timeline-content-info">
+                                Manning College of Information and Computer Sciences <br> at University of Massachusetts Amherst
+                            </div>
+                            <p><em style="font-weight: bold">“Pushing analytics close to database systems”</em></p>
+                            <p>Working as Research Assistant with <a target="_blank" href="https://people.cs.umass.edu/~ameli/">Prof Alexandra Meliou</a> and <a target="_blank"
+                                                                                                                                                                 href="https://people.cs.umass.edu/~phaas/">Prof
+                                Peter J. Haas</a>
+                                on dynamic query package maintenance. A work that extends <a target="_blank" href="http://packagebuilder.cs.umass.edu"> PackageBuilder</a> under evolving queries & data
+                                stream.
+                            </p>
+                            <p>Received a UMass CICS scholarship of $4,000 for the Best PhD applicant</p>
+
+                            <span class="cd-date">2022</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+
+                            <h2>BsC & MEng in Electrical and Computer Engineering</h2>
+                            <div class="timeline-content-info">
+                                School of Electrical and Computer Engineering <br> at Technical University of Crete
+                            </div>
+                            <p><em style="font-weight: bold">“Online Machine Learning in Distributed Environments for Big Data”</em></p>
+                            <p> I ranked in the Top-5% of my class, I worked with <a target="_blank" href="http://users.softnet.tuc.gr/~adeli/">Prof Antonios Deligiannakis</a> on Random Forest
+                                Optimizations under Data Drifts </p>
+                            <ul class="content-skills">
+                                <li><a style="color: white" target="_blank" href=" https://dias.library.tuc.gr/view/90722"> Thesis</a></li>
+                            </ul>
+                            <span class="cd-date">2021</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+
+                            <h6>1st Place Entrepreneurship Initiative Start-up Pitch Greece Section</h6>
+                            <div class="timeline-content-info">
+                                Institute of Electrical and Electronics Engineers <br> at IEEE Greek SB Conference
+                            </div>
+                            <p><em style="font-weight: bold">“Scan, Throw, Recycle”</em></p>
+
+                            <p> Founded a start-up initiative, <strong>RεScan</strong>, a user-friendly app promoting correct recycling habits. By scanning the barcode of items, the integrated machine
+                                learning model determines and suggests the recyclability category (if any), guiding users to dispose of their waste properly.
+                            </p>
+                            <ul class="content-skills">
+                                <li><a style="color: white" target="_blank" href="https://www.facebook.com/IEEER8Entrepreneurship/photos/2643657755916254">Participation</a></li>
+                                <li><a style="color: white" target="_blank" href="https://www.facebook.com/ieee.hsypc/posts/2584810448265412">Result</a></li>
+
+                            </ul>
+                            <span class="cd-date">2020</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                </section> <!-- cd-timeline -->
+            </div>
+        </div>
+        <div class="row mt-5" id="lower_section">
+            <!-- Content for the lower section will be added later as per your requirement -->
 
             <br>
             <hr style="width:50%">
             <br>
+
+            <h4> My technical skills as Research Data Scientist</h4>
+            <img id="myImg" src="photos/Data%20Scientist.png"
+                 alt="The key concepts that I am very familiar with!" style="width:100%;">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
             <h4> Online Material that I find useful</h4>
+            <br>
+            <hr style="width:50%">
+            <br>
 
-            <p class="notes">(...that surely have helped me a lot)</p>
             <!-- Trigger the Modal -->
-
-            <h6> Courses </h6>
             <ol>
                 <li><a class="notes" target="_blank"
                        href="https://www.coursera.org/specializations/machine-learning-introduction?">
@@ -233,165 +267,17 @@
 
             </ol>
 
-            <br>
-            <hr style="width:50%">
-            <br>
-
-            <h4> My technical skills as Research Data Scientist</h4>
-            <img id="myImg" src="photos/Data%20Scientist.png"
-                 alt="The key concepts that I am very familiar with!" style="width:100%;">
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
-
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
-            </div>
-
-            <hr style="width:50%">
-            <!--            <br>-->
-            <!--            <div class="certificate">-->
-            <!--                <input type="radio" name="position" checked/>-->
-            <!--                <input type="radio" name="position"/>-->
-            <!--                <input type="radio" name="position"/>-->
-            <!--                <input type="radio" name="position"/>-->
-            <!--                <input type="radio" name="position"/>-->
-            <!--                <input type="radio" name="position"/>-->
-            <!--                <main id="carousel">-->
-            <!--                    <div class="item">-->
-            <!--&lt;!&ndash;                        <div class="cards">&ndash;&gt;-->
-            <!--                            <div class="card_certificate">-->
-            <!--                                <img src="photos/apache-spark.png" class="card__image" alt=""/>-->
-            <!--                                <div class="card__overlay">-->
-            <!--                                    <div class="card__header">-->
-            <!--                                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">-->
-
-            <!--                                        </svg>-->
-            <!--                                        <img class="card__thumb" src="photos/img_1.png" alt=""/>-->
-            <!--                                        <div class="card__header-text">-->
-            <!--                                            <p class="card__title">-->
-            <!--                                                Apache Spark with Scala - Hands On with Big Data!-->
-            <!--                                            </p>-->
-            <!--&lt;!&ndash;                                            <span class="card__status">   Sundog Education - Udemy</span>&ndash;&gt;-->
-            <!--                                            <span class="card__status">Issued Jan 2021 - No expiration Date</span>-->
-            <!--                                        </div>-->
-            <!--                                    </div>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-            <!--                    </div>-->
-            <!--                    <div class="item">f2</div>-->
-            <!--                    <div class="item">f3</div>-->
-            <!--                    <div class="item"></div>-->
-            <!--                    <div class="item"></div>-->
-            <!--                    <div class="item"></div>-->
-            <!--                </main>-->
-            <!--            </div>-->
-            <!--            <hr style="width:50%">-->
-            <br>
-            <h4> Voluntary Actions</h4>
-            <br>
-            <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="false" aria-controls="collapseOne">
-                                <strong>Chairman of IEEE TUC Student Branch from (May 2018 – May2020)</strong>
-                            </button>
-                        </h5>
-                    </div>
-
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body" style="text-align: justify">
-                            <!-- &emsp; -->
-                            These two years, were the years that I will never forget.
-                            Year long, I was trying to give to the members of our branch, the best possible experience,
-                            by organising seminars, talks
-                            and workshops that could help them be a better version of themselves, not only educationally
-                            but also socially.
-                            All together, as a team, organised more than 20 different events such as educational trips
-                            <a target="_blank" href="https://ieeesb.tuc.gr/speech_event/10/">(FORTH)</a>,
-                            different
-                            competitions (Google Hashcode, IEEEXtreme, Capture the Flag: Hacking Competition) to name,
-                            but a few.
-                            <br><br>
-                            <!-- &emsp; -->
-                            I mostly contributed to the team's future by creating sub-teams with different scientific
-                            directions, following the structure of our university, such as telecom team,
-                            rocket team,
-                            energy/battery management team and web development team, where I strategically put students,
-                            who had attended advanced courses, to teach the younger ones,
-                            who wanted to evolve and learn more.
-                            <br><br>
-                            <!-- &emsp; -->
-                            Personally, I was the "teacher" in the web development team, where I helped young students
-                            build their own personal website,
-                            using frameworks in order to be able updating them along their academical career with new
-                            info.
-                            <br>
-                            <!-- &emsp; -->
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                <strong>IEEE Webmaster (TUC Student Branch) </strong>
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body" style="text-align: justify">
-                            <!-- &emsp; -->
-                            I was in the technical support of IEEE's Polytechnic website using Django
-                            tools, performing tasks such
-                            as updating, debugging, and expanding <a target="_blank" href="http://ieeesb.tuc.gr/">IEEE
-                            Website</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                <strong>IEEEXtreme Ambassador</strong>
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body" style="text-align: justify">
-
-                            <!-- &emsp; -->
-                            I have been the Ambassador for my university of the 24h programming competition of IEEE
-                            (IEEEXtreme 2018). My tasks were the organization of time and space for the competition,
-                            finding support of technical equipment, approaching sponsors to support the event,
-                            surveillance of competitor to name but a few.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
     </div>
-</div>
+</main>
 <script>
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -432,7 +318,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 
 </body>
 </html>
