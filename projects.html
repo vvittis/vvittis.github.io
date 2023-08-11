@@ -1,222 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-208779422-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-208779422-1');
-    </script>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="projects.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <title>Vasileios Vittis</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projects.css">
+    <!-- (Optional) Include Bootstrap JS and Popper.js for Bootstrap components that require JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link active" href="index.html">About me</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="projects.html">Projects</a>
-    </li>
-</ul>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2 col-sm-12">
-            <img style="width: 100%" src="photos/RandomForest.png" alt="">
-
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <h2> Projects </h2>
-            <br>
-            <h5><strong>Thesis: Online Ensemble Classification Algorithms of Big Data Streams at Apache Flink</strong></h5>
-            <a class="notes" target="_blank" href="https://doi.org/10.26233/heallink.tuc.90722">PDF</a> / <a class="notes" target="_blank"
-                                                                                                             href="https://github.com/vvittis/DistributedLearningJava">Code</a>
-            <p style="text-align: justify">
-                <!-- &emsp; -->
-                In a streaming context, machine learning is a more of a challenge, because incoming data cannot be stored and may change over time.
-                Therefore, we have to create such algorithms that pass of the data once and extract the most information out of it.
-                <br>
-                <!-- &emsp; -->
-                In my thesis there is a streaming Random Forest or else an ensemble of Hoeffding Trees (HT), using the distributed engine of Apache
-                Flink. It handles numerical attributes by efficiently modeling them with Gaussian Approximation, and it uses the SVFDT-II algorithm to
-                cope with potential cluster restrictions by setting stricter splitting rules. Also, my thesis considers concept (-distribution) drift,
-                where I used the DDM algorithm.
-                <br>
-                My main contribution is a new experimental proposition of disengaging HT growth from the amount of incoming data, and a new way of
-                consistent, highly reliable query answering system, that guarantees the minimum possible error-rate in periods of abrupt concept
-                drift.
-            </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <img src="photos/thesis_architecture.png" alt="">
-        </div>
-    </div>
-    <hr style="width:50%">
-    <div class="row">
-        <div class="col-md-2 col-sm-12">
-            <img style="width: 100%" src="photos/Spark.png" alt="">
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <h5><strong>[CCFD-RF] Credit Card Fraudulent Detection with Random Forest</strong></h5>
-            <a class="notes" target="_blank" href="https://github.com/vvittis/CCFD-RF">Code</a>
-
-            <p style="text-align: justify">
-                This is a project implementing a real-time fraud-detection system (FDS) for Credit Card Fraud Transactions using Adaptive Random Forest in Apache Spark platform. The
-                increasing use of credit card in online transactions reflects the rise of a new, fast and easy way of interchange in modern world. Based on extensive data collected for online card
-                payments in the United Kingdom, is expected that by 2026, the number of card payments per day will grow to 60 million.[1] This new form of transaction involves the risk of fraudulent
-                attacks and fishing attempts, therefore provokes the urgent need of developing fast and online FDS.
-                <br>
-                <!-- &emsp; -->
-                This project suggests a new system for detecting and monitoring online transactions
-                using the latest Apache Spark processing engine, Structured Streaming, and implementing an Adaptive Ensemble Classification Method, Random Forest. Our goal is to design a learner, for
-                extremely large datasets which do not fit in main memory, adapting to concept drift and evolving data. We show the effectiveness of our method on both synthetic and real world datasets
-                and we manage to reach a 92% accuracy on average.
-            </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <img src="photos/SparkCluster.png" alt="">
-        </div>
-    </div>
-    <hr style="width:50%">
-    <div class="row">
-        <div class="col-md-2 col-sm-12">
-            <img style="width: 100%" src="photos/ML.png" alt="">
-
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <h5><strong>Evaluation of Machine Learning Algorithms for Neuropsychiatric Systemic Lupus Erythematosus classification using resting-state
-                fMRI
-                connectivity data</strong></h5>
-            <a class="notes" target="_blank" href="docs/Evaluation%20of%20ML%20Algorithms%20for%20NPSLE%20classification.pdf">PDF</a>
-
-            <p style="text-align: justify">
-
-                In this study we explored the robustness of different machine learning algorithms for the classification of
-                NPSLE patients and healthy control subjects using resting-state fMRI connectivity indices.
-                Neuropsychiatric systemic lupus erythematosus, which is a systemic autoimmune inflammatory disorder,
-                involves a wide range of focal and diffuse central and peripheral nervous system symptoms.
-                <br>
-                <!-- &emsp; -->
-                Machine Learning applications on clinical data may enhance the existing workflow for NPSLE classification as there
-                is no established method of applying neuroimaging data to the diagnosis of NPSLE. We evaluated different
-                ML algorithms: Support Vector Machines (SVM), K-Nearest-Neighbor (KNN), Naïve Bayesian and
-                Random Forest in order to achieve this goal. Feature selection or reduction methods were applied prior to
-                the classification process. The Connectivity Matrix used consisted of pairwise regional functional
-                associations of the fMRI signals within each of three predetermined brain networks in 31 NPSLE patients
-                and 31 healthy control subjects. Optimal, cross-validated classification accuracy was obtained using
-                Random Forest (77%) followed by SVM and NB methods (74%). Results demonstrate the potential for the future implementation of similar
-                methods in the diagnosis of NPSLE.
-
-                <br><br>
-                <a class="notes" target="_blank" href="https://github.com/vvittis/MachineLearning">More Machine Learning Projects</a>
-            </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <img src="photos/fmri.PNG" alt="">
-        </div>
-    </div>
-    <hr style="width:50%">
-    <div class="row">
-        <div class="col-md-2 col-sm-12">
-            <img style="width: 100%" src="photos/Sampling.png" alt="">
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <h5><strong>Random Sampling for Group-By Queries in Apache Flink</strong></h5>
-            <a class="notes" target="_blank" href="https://github.com/vvittis/FlinkSampling">Code</a>
-
-            <p style="text-align: justify">
-
-                This is a project implementing <a class="notes" target="_blank" href="https://arxiv.org/pdf/1909.02629.pdf">Random Sampling for
-                Group-By Queries</a> at Apache Flink Platform. The goal of this project is to sample
-                streaming tuples, answering effectively Single Aggregate along with a single group-by clause. This implementation is a two-pass
-                algorithm which is divided into two phases. The first phase has been taken from the first job (pre-processing) and the second phase
-                from the second job (reservoir sampling). The program prints per stratum:
-            <ul>
-                <li>Its average</li>
-                <li>The standard deviation</li>
-                <li>The sample size</li>
-                <li>The tuples of the sample</li>
-
-            </ul>
-
-            </p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <img src="photos/flink_sampling.PNG" alt="">
-        </div>
-    </div>
-    <hr style="width:50%">
-    <div class="row">
-        <div class="col-md-2 col-sm-12">
-            <img style="width: 100%" src="photos/PHP.png" alt="">
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <h5><strong>Student App using PHP in Docker Environment</strong></h5>
-            <a class="notes" target="_blank" href="https://github.com/vvittis/StudentApp">Code</a>
-
-            <p style="text-align: justify">
-                The purpose of this exercise is to establish communication among different services with Docker from different containers. The functionalities that the project offers are the above:
-            <ul>
-                <li> Users (Student, Teacher) Validation and Registration</li>
-                <li> Edit, Add, Delete, Search Student by authorized Teachers</li>
-            </ul>
-            </p>
-            <p style="text-align: justify">
-                The PHP-Apache service is responsible for containing all .php files of the project. The fact that this service depends on the connected database signifies that the database(mysqli)
-                service
-                will start as soon as the website(php-apache) service will start. In this service I do not use a ready to use container, but I constructed our own DockerFile inside the php folder. In
-                <br>
-                <!-- &emsp; -->
-                The MySQL is responsible for managing the database system of the project. This action serves that during the build of docker-compose up, the website will have an initialised database
-                alongside by grabbing the school.sql and
-                making it the starting point of the database.
-                <br>
-                <!-- &emsp; -->
-                The PhpMyAdmin service is optional but nonetheless necessary for visualization and better monitoring of the database. It's exposed port is 8080 for accessing externally and port 80 for
-                internal communication with the php as we discussed previously.
-            </p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <h5><strong>A Decentralized "Ask Question App" in the Ethereum Blockchain</strong></h5>
-            <a class="notes" target="_blank" href="https://github.com/vvittis/DecentralizedAskQuestionApp">Code</a> / <a class="notes" target="_blank" href="https://billethchat.xyz/">Live Demo</a>
-
-            <p style="text-align: justify">
-                Truffle & React Decentralized Application on Ethereum TestNet (Rinkeby).
-                This project deploys a Smart Contracts setting the basis for the following cases:
-            <ul>
-                <li> Create Post</li>
-                <li> List all posts (Newest and Most liked)</li>
-                <li> Tip post through EAS (Ethereum Attestation System)</li>
-                <li>  Comment post</li>
-            </ul>
-            Blog Smart Contract handles the posting of "questions" and the comments of them.
-            </p>
-        </div>
-        <div class="col-md-2 col-sm-12">
-            <img style="width: 100%" src="photos/Eth.png" alt="">
-        </div>
-    </div>
+<div class="navbar">
+    <a class="nav-item" href="index.html"><strong style="color: #1c4587;">Home</strong></a>
+    <a class="nav-item" href="https://www.linkedin.com/in/vasilis-vittis/" target="_blank">LinkedIn</a>
+    <a class="nav-item" href="https://github.com/vvittis" target="_blank">GitHub</a>
 </div>
 
+<div class="main-container">
+    <section id="timeline" class="timeline-outer">
+        <div class="container" id="content">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h1 style="color: #1c4587;" class="blue-text lighten-1 header">My Projects</h1>
+                    <ul class="timeline">
+                        <li class="event" data-link="https://github.com/vvittis/DistributedLearningJava">
+                            <h3>Random Forest Optimizations under Data Drifts (Thesis)</h3>
+                            <p>
+                                – Created a distributed ensemble learning system for binary classification, using multiple decision trees (Random Forest) with datasets over 25M+ evolving streaming
+                                data.
+                                <br>
+                                – Researched and proposed three scaling optimizations for:
+                            <ul>
+                                <li>
+                                    Data Modeling: Gaussian Approximation for streamlined handling of numerical attributes in unbounded data streams, yielding to improvement on resource allocation.
+                                    (95%
+                                    improvement)
+                                </li>
+                                <li>
+                                    Resampling Enhancement: Refined the Online Bagging approach by centralizing its function, resulting in reduced data transactions (80% improvement)
+                                </li>
+                                <li>
+                                    Base Learner Adaptation: Designed and implemented a dynamic accuracy monitoring method to halt/resume learner adjustments accounting for "static data" periods,
+                                    optimizing performance without unnecessary growth (70% memory improvement, 90% accuracy under data drifts)
+                                </li>
+                            </ul>
+                            – Implemented on Apache Flink and Apache Kafka, developed with Java and Scala.</p>
+
+                        </li>
+
+
+                        <li class="event" data-date="https://github.com/vvittis/CCFD-RF">
+                            <h3>Online Credit Card Fraud Detection</h3>
+                            <p>
+                                – Built an end-to-end real-time fraud detection system for credit card transactions using adaptive Random Forest of Hoeffding Trees for datasets 10M+ tuples, addressing
+                                issues such as imbalance classes, online bagging, voting boosting and avoiding overfitting.
+                                <br>
+                                – Developed with Scala and Java. Deployed on Apache Spark using both HDFS and Apache Kafka source/sink. Results: 92% accuracy and 95% F1-score.
+                            </p>
+                        </li>
+
+                        <li class="event" data-date="https://vvittis.github.io/docs/Evaluation%20of%20ML%20Algorithms%20for%20NPSLE%20classification.pdf">
+                            <h3>Lupus (NPSLE) Classification using ML</h3>
+                            <p>– Implemented and designed ML pipelines including Support Vector Machines (SVM), K-Nearest Neighbors, and Random Forest on clinical data for the diagnosis of Lupus
+                                (NPSLE) disorder, researching the impact of integrating Machine Learning techniques on such sensitive high-dimensional data.
+                                <br>
+                                – Analyzed resting-state connectivity fMRI data by performing feature selection, classification, and cross validation techniques. Results: Random Forest (Acc: 77%
+                                F1-score: 79%), SVM (Acc: 74% F1-score: 73%).
+                            </p>
+                        </li>
+                        <li class="event" data-date="">
+                            <h3>RεScan</h3>
+                            <p>
+                                – Founded a start-up initiative, RεScan, a user-friendly app promoting correct recycling habits. By scanning the barcode of items, the integrated machine learning model
+                                determines and suggests the recyclability category (if any), guiding users to dispose of their waste properl
+                                <br>
+                                – Implemented Convolutional Neural Networks to distinguish the recycling categories based on barcode images, used Firebase to maintain a dynamic repo of
+                                barcode-to-product feature mappings.
+                            </p>
+                        </li>
+                        <li class="event" data-date="https://github.com/vvittis/ToDoAI">
+                            <h3>ToDo AI</h3>
+                            <p>– Designed a PyCharm extension integrating AI for code generation in extensive software development. Released a Beta version offering AI-generated code suggestions with
+                                descriptive change descriptions.
+                                <br>
+                                – Developed with Python, using OpenAI’s GPT-3.5-Turbo Model
+                            </p>
+                        </li>
+                        <li class="event" data-date="https://github.com/vvittis/DecentralizedAskQuestionApp">
+                            <h3>Ask Question App</h3>
+                            <p>– Built front and back-end modules, secure blockchain authentication using Metamask wallet integration, smart contracts development to support Q&A interactions and
+                                tipping (upvoting) posts through <a target="_blank" href="https://attest.sh">Ethereum Attestation Service </a> using <a target="_blank"
+                                                                                                                                                        href="https://easscan.org/schema/view/0xaa983dd1476fa60e32894fbe15d4e12aaf8db37862add370881099642dafae16">
+                                    my custom schema </a>.
+                                <br>
+                                – Implemented on Rinkeby (Ethereum TestNet) decentralized internet, developed using Solidity, Truffle Suite, Node.js and React.js
+
+                            </p>
+                        </li>
+                        <li class="event" data-date="https://github.com/vvittis/StudentApp">
+                            <h3>School Dashboard App</h3>
+                            <p>– Full stack website development for managing classes, students and grades by authorized teachers, personnel registration and authentication.
+                                <br>
+                                – Developed with Javascript and php on PHP-Apache server using Docker containers and MySQL.
+                            </p>
+                        </li>
+                        <li class="event" data-date="https://ieeesb.tuc.gr">
+                            <h3>IEEE TUC Website</h3>
+                            <p>– Built a full stack website for the local IEEE student branch to support user registration and authentication, team creation for contests, workshop management, posts
+                                and news sections
+                                <br>
+                                – Developed using DJango framework, Python, PostgreSQL, html, css.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const events = document.querySelectorAll(".timeline .event");
+
+        events.forEach(function (event) {
+            event.addEventListener("click", function () {
+                const link = event.getAttribute("data-link");
+                if (link) {
+                    window.open(link, "_blank");
+                }
+            });
+        });
+    });
+
+</script>
 
 </body>
 </html>

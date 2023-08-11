@@ -692,9 +692,8 @@ Main components
 
 .navbar {
     position: fixed !important;
-
     top: 50%; /* centers the navbar vertically */
-    right: 10px; /* places it on the right side */
+    right: 2%; /* places it on the right side */
     transform: translateY(-50%); /* this shifts it up by half its height, ensuring it's truly centered */
     width: 100px; /* adjust width as needed */
     background-color: #f4f4f4; /* change the background color as needed */
