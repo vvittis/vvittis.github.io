@@ -34,21 +34,21 @@
                                 data.
                                 <br>
                                 – Researched and proposed three scaling optimizations for:
-                                <ul>
-                                    <li>
-                                        Data Modeling: Gaussian Approximation for streamlined handling of numerical attributes in unbounded data streams, yielding to improvement on resource allocation.
-                                        (95%
-                                        improvement)
-                                    </li>
-                                    <li>
-                                        Resampling Enhancement: Refined the Online Bagging approach by centralizing its function, resulting in reduced data transactions (80% improvement)
-                                    </li>
-                                    <li>
-                                        Base Learner Adaptation: Designed and implemented a dynamic accuracy monitoring method to halt/resume learner adjustments accounting for "static data" periods,
-                                        optimizing performance without unnecessary growth (70% memory improvement, 90% accuracy under data drifts)
-                                    </li>
-                                </ul>
-                                    – Implemented on Apache Flink and Apache Kafka, developed with Java and Scala.
+                            <ul>
+                                <li>
+                                    Data Modeling: Gaussian Approximation for streamlined handling of numerical attributes in unbounded data streams, yielding to improvement on resource allocation.
+                                    (95%
+                                    improvement)
+                                </li>
+                                <li>
+                                    Resampling Enhancement: Refined the Online Bagging approach by centralizing its function, resulting in reduced data transactions (80% improvement)
+                                </li>
+                                <li>
+                                    Base Learner Adaptation: Designed and implemented a dynamic accuracy monitoring method to halt/resume learner adjustments accounting for "static data" periods,
+                                    optimizing performance without unnecessary growth (70% memory improvement, 90% accuracy under data drifts)
+                                </li>
+                            </ul>
+                            – Implemented on Apache Flink and Apache Kafka, developed with Java and Scala.
                             </p>
 
                         </li>
@@ -74,6 +74,16 @@
                                 F1-score: 79%), SVM (Acc: 74% F1-score: 73%).
                             </p>
                         </li>
+
+                        <li class="event" data-link="https://github.com/vvittis/FlinkSampling">
+                            <h3>Online Random Sampling for Group-By Queries </h3>
+                            <p>
+                                – Implemented Random Sampling for Group-By Queries in order to effectively answer Single Aggregate along with a single group-by clause.
+                                <br>
+                                – The algorithm is divided into two phases. The first phase is about pre-processing (first Flink Job) and the second phase performs the reservoir sampling (second Flink Job).
+                            </p>
+                        </li>
+
                         <li class="event" data-date="">
                             <h3>RεScan Start-Up</h3>
                             <p>
