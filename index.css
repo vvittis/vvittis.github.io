@@ -687,7 +687,7 @@ Main components
 }
 h4{
     color: #1c4587;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .navbar {
