@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Add Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a class="nav-item" href="index.html"><strong style="color: #1c4587;">Home</strong></a>
+        <a class="nav-item" href="projects.html"><strong style="color: #1c4587;">Projects</strong></a>
+        <a class="nav-item" href="blog.html"><strong style="color: #1c4587;">Blog</strong></a>
+        <a class="nav-item" href="https://www.linkedin.com/in/vasilis-vittis/" target="_blank">LinkedIn</a>
+        <a class="nav-item" href="https://github.com/vvittis" target="_blank">GitHub</a>
+    </div>
+    <div id="blog-posts"></div>
+    <script>
+        // Initialize Contentful client
+        const client = contentful.createClient({
+            space: '1pr6j5b0ji2x',
+            environment: 'master',
+            accessToken: '4D7gBFEGEhYhcB66rD-sZhzLJe5LVsSiTJPBqK437Xs'
+        });
+
+        // Fetch and display the blog post
+        client.getEntry('JpGXdKZGzaQlcihoDcrz3')
+            .then((entry) => {
+                const blogPostsDiv = document.getElementById('blog-posts');
+                blogPostsDiv.innerHTML = `
+                    <div class="blog-post" style="max-width: 800px; margin: 40px auto; padding: 20px;">
+                        <h2 style="color: #1c4587;">${entry.fields.title}</h2>
+                        <div class="content">
+                            ${entry.fields.content}
+                        </div>
+                    </div>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('blog-posts').innerHTML = 'Error loading blog post';
+            });
+    </script>
+</body>
+</html>
